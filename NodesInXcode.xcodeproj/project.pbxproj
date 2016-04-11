@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC78A46B1CAD79BE00BD7110 /* ListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4621CAD787100BD7110 /* ListTester.cpp */; };
 		CC78A46C1CAD79C200BD7110 /* ArrayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4521CAD786000BD7110 /* ArrayNode.cpp */; };
 		CC78A46D1CAD79C500BD7110 /* CTECArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4541CAD786000BD7110 /* CTECArray.cpp */; };
 		CC78A46E1CAD79C800BD7110 /* CTECList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4561CAD786000BD7110 /* CTECList.cpp */; };
@@ -46,8 +45,6 @@
 		CC78A4591CAD786000BD7110 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		CC78A45A1CAD786000BD7110 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
 		CC78A45B1CAD786000BD7110 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
-		CC78A4621CAD787100BD7110 /* ListTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListTester.cpp; sourceTree = "<group>"; };
-		CC78A4631CAD787100BD7110 /* ListTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTester.h; sourceTree = "<group>"; };
 		CC9FEA6C1CBBE6710073CF04 /* NodesInXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NodesInXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9FEA6D1CBBE6A20073CF04 /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 		CC9FEA6E1CBBE6A20073CF04 /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
@@ -97,19 +94,9 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CC78A4611CAD787100BD7110 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CC78A4621CAD787100BD7110 /* ListTester.cpp */,
-				CC78A4631CAD787100BD7110 /* ListTester.h */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		CCC8FD7C1C99A52900602C43 = {
 			isa = PBXGroup;
 			children = (
-				CC78A4611CAD787100BD7110 /* Tests */,
 				CC78A4511CAD786000BD7110 /* Model */,
 				CC78A44B1CAD784D00BD7110 /* Controller */,
 				CC9FEA6C1CBBE6710073CF04 /* NodesInXcode */,
@@ -181,7 +168,6 @@
 				CC78A46D1CAD79C500BD7110 /* CTECArray.cpp in Sources */,
 				CC78A46C1CAD79C200BD7110 /* ArrayNode.cpp in Sources */,
 				CC9FEA6F1CBBE6A20073CF04 /* TreeNode.cpp in Sources */,
-				CC78A46B1CAD79BE00BD7110 /* ListTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

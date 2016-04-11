@@ -92,7 +92,6 @@ Type CTECList<Type> :: removeFromIndex(int index)
 	assert (this->size > 0);
 	assert(size > 0 && index >= 0 && index < size);
 
-	ArrayNode<Type> * deleteMe;
 
 	ArrayNode<Type> * current = head;
 		for(int spot = 0; spot <= index; spot++)

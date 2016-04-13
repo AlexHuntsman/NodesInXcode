@@ -11,6 +11,36 @@
 using namespace std;
 
 template <class Type>
+CTECBinaryTree<Type>:: CTECBinaryTree()
+{
+    root = nullptr;
+    height = 0;
+    balanced = true;
+    size = 0;
+}
+
+template <class Type>
+bool CTECBinaryTree<Type> :: insert(const Type &value)
+{
+    if(contains(value))
+    {
+        return false;
+    }
+    else
+    {
+        if(value < root->getValue())
+        {
+            insert(value, root->getLeftChild());
+        }
+        else
+        {
+            insert(value, root->getRightChild());
+        }
+        return true;
+    }
+}
+
+template <class Type>
 void CTECBinaryTree<Type> :: inorderTransversal(TreeNode<Type> *currentNode)
 {
     if(currentNode != nullptr)
@@ -105,6 +135,10 @@ bool CTECBinaryTree<Type> :: contains(Type value, CTECBinaryTree<Type> * current
     }
     return false;
 }
+
+
+
+
 
 
 

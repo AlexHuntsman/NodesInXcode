@@ -61,3 +61,50 @@ void CTECBinaryTree<Type> :: calculateSize(TreeNode<Type> * currentNode)
     }
     
 }
+
+template <class Type>
+bool CTECBinaryTree<Type> :: contains(Type value)
+{
+    bool isInTree = false;
+    if(root->getValue() == value)
+    {
+        isInTree = true;
+    }
+    else if(value <root->getLeftChild())
+    {
+        isInTree = contains(value, root->getleftChild());
+    }
+    else
+    {
+        isInTree = contains(value, root->getRightChild());
+
+    }
+    return isInTree;
+}
+
+
+template <class Type>
+bool CTECBinaryTree<Type> :: contains(Type value, CTECBinaryTree<Type> * currentTree)
+{
+    if(currentTree == nullptr)
+    {
+        return false;
+    }
+    if(currentTree->getRoot()->getValue() == value)
+    {
+        return true;
+    }
+    else if(value < currentTree->getRoot()->getValue())
+    {
+        return contains(value, currentTree->getRoot()->getleftChild());
+    }
+    else
+    {
+        return contains(value, currentTree->getRoot()->getRightChild());
+        
+    }
+    return false;
+}
+
+
+

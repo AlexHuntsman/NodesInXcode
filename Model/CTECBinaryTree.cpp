@@ -23,7 +23,11 @@ template <class Type>
 Type CTECBinaryTree<Type> :: remove(const Type &value)
 {
    
-    if(contains(value))
+    if(!contains(value))
+    {
+        return value;
+    }
+    else
     {
         
     }

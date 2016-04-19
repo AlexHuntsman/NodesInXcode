@@ -48,6 +48,12 @@ Type CTECBinaryTree<Type> :: remove(const Type &value)
 }
 
 template <class Type>
+Type CTECBinaryTree<Type> :: getRightMostChild(CTECBinaryTree * currentTree)
+{
+    
+}
+
+template <class Type>
 bool CTECBinaryTree<Type> :: insert(const Type &value)
 {
     TreeNode<Type> * insertedNode(value);

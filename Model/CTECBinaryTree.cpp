@@ -20,6 +20,15 @@ CTECBinaryTree<Type>:: CTECBinaryTree()
 }
 
 template <class Type>
+CTECBinaryTree<Type> :: ~CTECBinaryTree()
+{
+    while(root != nullptr)
+    {
+        remove(root);
+    }
+}
+
+template <class Type>
 void CTECBinaryTree<Type> :: remove(const Type &value)
 {
     TreeNode<Type> * current = root;

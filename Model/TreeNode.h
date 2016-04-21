@@ -9,11 +9,10 @@
 #ifndef TreeNode_h
 #define TreeNode_h
 
-#include <stdio.h>
 #include "Node.h"
 
 template <class Type>
-class TreeNode : Node<Type>
+class TreeNode : public Node<Type>
 {
 private:
     TreeNode<Type> * leftChild;

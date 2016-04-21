@@ -14,7 +14,7 @@
 #include "../Model/ArrayNode.cpp"
 #include "../Model/CTECArray.cpp"
 #include "../Model/Timer.h"
-
+#include "../Model/CTECBinaryTree.cpp"
 #include "../Model/CTECList.cpp"
 
 using namespace std;
@@ -26,11 +26,13 @@ private:
 	//CTECArray<string> * myStringArray;
 	//CTECArray<int> * myIntArray;
 	//CTECArray<double> * myDoubleArray;
+    CTECBinaryTree<int> * testTree;
 	Timer arrayTimer;
 	void sortData();
 	void testList();
 	void searchTest();
 
+    void tryTree();
 	int * mergeData;
 	void doMergesort();
 	void mergesort(int dataArray [], int size);

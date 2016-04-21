@@ -45,7 +45,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "getRightMostChild(CTECBinaryTree * leftSubTree)"
+            landmarkName = "getRightMostChild(TreeNode&lt;Type&gt; * leftSubTree)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

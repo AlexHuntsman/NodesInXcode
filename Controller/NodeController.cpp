@@ -16,12 +16,20 @@ NodeController::NodeController()
 	//myIntArray = new CTECArray<int>(5);
 	//myDoubleArray = new CTECArray<double>(5);
 	//myNumberList = new CTECList<int>();
-
+    testTree = new CTECBinaryTree<int>();
 }
 
 NodeController::~NodeController()
 {
 	//TODO Auto-geerated deconstructor stub
+}
+
+void NodeController::tryTree()
+{
+    CTECBinaryTree<int> testTree;
+    testTree.insert(7);
+    testTree.insert(10);
+    testTree.insert(-5);
 }
 
 void NodeController::checkSorts()
@@ -44,6 +52,8 @@ void NodeController::checkSorts()
 }
 void NodeController::start()
 {
+    tryTree();
+    
 //	cout << intNode.getValue() << endl;
 //	cout << stringArrayNode.getValue() << endl;
 	//string first = "first";
@@ -76,7 +86,7 @@ void NodeController::start()
 	//myNumberList->set(3, 4);
 	//myNumberList->set(4, 5);
 
-	arrayTimer.startTimer();
+	//arrayTimer.startTimer();
 
 	//for(int index = 0; index < myStringArray->getSize(); index++)
 //{
@@ -91,8 +101,8 @@ void NodeController::start()
 	//		cout << "In my Double array the contents at spot " << index << " are: " << myDoubleArray->get(index) << endl;
 	//	}
 
-	arrayTimer.stopTimer();
-	arrayTimer.displayTimerInformation();
+	//arrayTimer.stopTimer();
+	//arrayTimer.displayTimerInformation();
 
 }
 

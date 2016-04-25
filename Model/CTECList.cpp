@@ -203,7 +203,7 @@ assert(size > 0);
 template<class Type>
 Type CTECList<Type> :: getFromIndex(int index)
 {
-	Type thingToReturn; // In case we need to use value we are deleting
+	Type thingToReturn = 0; // In case we need to use value we are deleting
 
 	assert (this->size > 0);
 	assert(size > 0 && index >= 0 && index < size);

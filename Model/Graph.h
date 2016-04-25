@@ -29,8 +29,8 @@ public:
     void addEdge(int source, int target);
     void removeEdge(int source, int target);
     Type& operator [] (int vertex);
-    
+    int size() const;
     bool isEdge(int source, int target) const;
-    std::set<int> neighbors(int vertex);
+    std::set<int> neighbors(int vertex) const;
     Type operator [] (int vertex) const;
 };

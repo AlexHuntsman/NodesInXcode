@@ -7,6 +7,8 @@
 //
 
 #include "Graph.h"
+#include <queue>
+using namespace std;
 
 template <class Type>
 const int Graph<Type> :: MAXIMUM;
@@ -79,6 +81,65 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
         }
     }
     return answer;
+}
+
+template<class Type>
+void Graph<Type> :: depthFirstTravsal(Graph<Type> currentGraph, int vertex)
+{
+    bool markedVerticies[MAXIMUM];
+    assert(vertex < currentGraph.size());
+    std::fill_n(markedVerticies, currentGraph.size(), false);
+    depthFirstTravsal(currentGraph, vertex, markedVerticies);
+}
+
+template<class Type>
+void Graph<Type> :: depthFirstTravsal(Graph<Type> currentGraph, int vertex, bool * markedVerticies)
+{
+    std::set<int> connections = currentGraph.neighbors(vertex);
+    std::set<int>::iterator setIterator;
+    
+    markedVerticies[vertex] = true;
+    cout<< currentGraph[vertex] << endl;
+    
+    for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+    {
+        if(!markedVerticies[*setIterator])
+        {
+            depthFirstTravsal(currentGraph, *setIterator, markedVerticies);
+        }
+    }
+    
+    
+}
+
+template<class Type>
+void Graph<Type> :: breadthFirstTravsal(Graph<Type> currentGraph, int vertex)
+{
+    bool markedVerticies[MAXIMUM];
+    std::set<int> conections;
+    std::set<int>::iterator setIterator;
+    std::queue<int> vertexQueue;
+    assert(vertex < currentGraph.size());
+    
+    std::fill_n(markedVerticies, currentGraph.size(),false);
+    markedVerticies[vertex] = true;
+    cout<< currentGraph[vertex]<< endl;
+    vertexQueue.push(vertex);
+    while(!vertexQueue.empty())
+    {
+        conections = currentGraph.neighbors(vertexQueue.front());
+        vertexQueue.pop();
+        
+        for(setIterator = conections.begin(); setIterator != conections.end(); setIterator++)
+        {
+            if(!markedVerticies[*setIterator])
+            {
+                markedVerticies[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
+                vertexQueue.push(*setIterator);
+            }
+        }
+    }
 }
 
 

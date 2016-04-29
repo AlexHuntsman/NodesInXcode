@@ -33,4 +33,8 @@ public:
     bool isEdge(int source, int target) const;
     std::set<int> neighbors(int vertex) const;
     Type operator [] (int vertex) const;
+    void depthFirstTravsal(Graph currentGraph, int vertex, bool * markedVerticies);
+    void depthFirstTravsal(Graph currentGraph, int vertex);
+    void breadthFirstTravsal(Graph currentGraph, int vertex);
+    
 };

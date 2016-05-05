@@ -18,7 +18,7 @@ class HashTable
 {
 private:
     int capacity;
-    double efficiencyPercentile
+    double efficiencyPercentile;
     int size;
     Type * internalStorage;
     
@@ -32,5 +32,6 @@ public:
     void add(const Type& value);
     bool remove(const Type& value);
     bool contains(const Type& value);
+    int getSize();
     
 };

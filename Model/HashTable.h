@@ -9,7 +9,8 @@
 #ifndef HashTable_h
 #define HashTable_h
 
-#include <stdio.h>
+#include "CTECList.cpp"
+#include "HashNode.cpp"
 
 #endif /* HashTable_h */
 
@@ -18,20 +19,30 @@ class HashTable
 {
 private:
     int capacity;
+    int tableCapacity;
     double efficiencyPercentile;
     int size;
-    Type * internalStorage;
+    HashTable<Type> * internalStorage;
+    CTECList<HashNode <Type>> * tableStorage;
     
+    int findPosition(HashNode<Type> currentNode);//done
+    int findTablePosition(HashNode<Type> currentNode);
     
-    void updateSize();
-    int findPosition(const Type& value);
-    int handleCollision(const Type& value);
+    int handleCollision(HashNode<Type> currentNode);//done
+
+    void updateSize();// sort of
+    void updateTableCapacity();//done
+    int getNextPrime();//done
+    bool isPrime(int canidateNumber);//done
 public:
-    HashTable();
-    ~HashTable();
-    void add(const Type& value);
-    bool remove(const Type& value);
-    bool contains(const Type& value);
-    int getSize();
+    HashTable();//done
+    ~HashTable();//done
     
+    void add(HashNode<Type> currentNode);//done
+    void addToTable(HashNode<Type> currentNode);//done
+    
+    bool remove(HashNode<Type> currentNode);
+    bool contains(HashNode<Type> currentNode);
+    int getSize();//done
+
 };

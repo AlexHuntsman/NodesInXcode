@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC04C0291CDB90910094924A /* HashTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC04C0271CDB90910094924A /* HashTable.cpp */; };
+		CC0C49A31CE375BB00909772 /* HashNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC0C49A11CE375BB00909772 /* HashNode.cpp */; };
 		CC1BB1061CCE5AAA0030B7FE /* Graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1BB1041CCE5AAA0030B7FE /* Graph.cpp */; };
 		CC78A46C1CAD79C200BD7110 /* ArrayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4521CAD786000BD7110 /* ArrayNode.cpp */; };
 		CC78A46D1CAD79C500BD7110 /* CTECArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC78A4541CAD786000BD7110 /* CTECArray.cpp */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		CC04C0271CDB90910094924A /* HashTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashTable.cpp; sourceTree = "<group>"; };
 		CC04C0281CDB90910094924A /* HashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
+		CC0C49A11CE375BB00909772 /* HashNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HashNode.cpp; sourceTree = "<group>"; };
+		CC0C49A21CE375BB00909772 /* HashNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashNode.h; sourceTree = "<group>"; };
 		CC1BB1041CCE5AAA0030B7FE /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
 		CC1BB1051CCE5AAA0030B7FE /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		CC78A44C1CAD784D00BD7110 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeController.cpp; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				CC1BB1051CCE5AAA0030B7FE /* Graph.h */,
 				CC04C0271CDB90910094924A /* HashTable.cpp */,
 				CC04C0281CDB90910094924A /* HashTable.h */,
+				CC0C49A11CE375BB00909772 /* HashNode.cpp */,
+				CC0C49A21CE375BB00909772 /* HashNode.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				CC78A46C1CAD79C200BD7110 /* ArrayNode.cpp in Sources */,
 				CC04C0291CDB90910094924A /* HashTable.cpp in Sources */,
 				CC9FEA6F1CBBE6A20073CF04 /* TreeNode.cpp in Sources */,
+				CC0C49A31CE375BB00909772 /* HashNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

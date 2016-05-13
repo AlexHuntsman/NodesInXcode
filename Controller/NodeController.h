@@ -16,7 +16,7 @@
 #include "../Model/Timer.h"
 #include "../Model/CTECBinaryTree.cpp"
 #include "../Model/CTECList.cpp"
-
+#include "../Model/HashTable.cpp"
 using namespace std;
 
 class NodeController
@@ -41,6 +41,8 @@ private:
 	//CTECList<int> * myNumberList;
 	CTECList<int> * numbersInList();
 	CTECArray<int> * numbersInArray();
+    
+    void testHashTable();
 
 
 public:

@@ -31,8 +31,7 @@ Node<Type>::~Node()
 template <class Type>
 Type Node<Type> :: getValue()
 {
-	return this->value;
-	pointers = nullptr;
+    return this->value;
 }
 
 template <class Type>

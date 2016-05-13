@@ -52,7 +52,7 @@ void NodeController::checkSorts()
 }
 void NodeController::start()
 {
-    tryTree();
+    //tryTree();
     
 //	cout << intNode.getValue() << endl;
 //	cout << stringArrayNode.getValue() << endl;
@@ -104,6 +104,31 @@ void NodeController::start()
 	//arrayTimer.stopTimer();
 	//arrayTimer.displayTimerInformation();
 
+}
+
+void NodeController :: testHashTable()
+{
+    HashTable<int> tempTable;
+    HashNode<int> tempArray[10];
+    for(int spot = 0; spot <10; spot++)
+    {
+        int randomValue = rand();
+        int randomKey = rand();
+        HashNode<int> temp = HashNode<int>(randomKey, randomValue);
+        tempTable.add(temp);
+        tempArray[spot] = temp;
+    }
+    bool test = tempTable.contains(tempArray[0]);
+    string result;
+    if(test)
+    {
+        result = "it's there";
+    }
+    else
+    {
+        result = "not anywhere";
+    }
+    cout << result << endl;
 }
 
 void NodeController::doMergesort()

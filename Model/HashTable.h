@@ -9,7 +9,7 @@
 #ifndef HashTable_h
 #define HashTable_h
 
-#include "CTECList.cpp"
+#include "CTECList.h"
 #include "HashNode.cpp"
 
 #endif /* HashTable_h */
@@ -18,31 +18,33 @@ template <class Type>
 class HashTable
 {
 private:
-    int capacity;
-    int tableCapacity;
-    double efficiencyPercentile;
-    int size;
-    HashTable<Type> * internalStorage;
-    CTECList<HashNode <Type>> * tableStorage;
+    int capacity;//- done
+    int tableCapacity;//- done
+    double efficiencyPercentile;//- done
+    int size;//- done
+    HashNode<Type> ** internalStorage;//- done
+    CTECList<HashNode <Type>> * tableStorage;//- done
     
-    int findPosition(HashNode<Type> currentNode);//done
+    int findPosition(HashNode<Type> currentNode);//done -
     int findTablePosition(HashNode<Type> currentNode);
     
-    int handleCollision(HashNode<Type> currentNode);//done
+    int handleCollision(HashNode<Type> currentNode);//done -
 
-    void updateSize();// sort of
-    void updateTableCapacity();//done
-    int getNextPrime();//done
-    bool isPrime(int canidateNumber);//done
+    void updateSize();//done - same as updateCapacity
+    void updateTableCapacity();//done -
+    int getNextPrime();//done -
+    bool isPrime(int canidateNumber);//done -
 public:
-    HashTable();//done
-    ~HashTable();//done
+    HashTable();//done -
+    ~HashTable();//done -
     
-    void add(HashNode<Type> currentNode);//done
-    void addToTable(HashNode<Type> currentNode);//done
+    void add(HashNode<Type> currentNode);//done -
+    void addToTable(HashNode<Type> currentNode);//done -
     
-    bool remove(HashNode<Type> currentNode);
-    bool contains(HashNode<Type> currentNode);
-    int getSize();//done
-
+    bool remove(HashNode<Type> currentNode);// -
+    bool contains(HashNode<Type> currentNode);// - done
+    int getSize();//done -
+/*
+ Table is the same as Chained
+ */
 };

@@ -14,6 +14,11 @@ using namespace std;
 template <class Type>
 const int Graph<Type> :: MAXIMUM;
 
+template<class Type>
+Graph<Type> :: Graph()
+{
+    
+}
 template <class Type>
 void Graph<Type> :: addEdge(int source, int target)
 {
